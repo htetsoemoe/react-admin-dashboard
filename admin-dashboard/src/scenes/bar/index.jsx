@@ -1,10 +1,10 @@
-import React from 'react'
 import { Typography } from '@mui/material'
+import React from 'react'
 
 const index = () => {
   return (
     <div>
-      <Typography variant='h3' sx={{ml: "50px", mt: "50px"}}>Dashboard Component</Typography>
+      <Typography variant='h3' sx={{ ml: "50px", mt: "50px" }}>Bar Component</Typography>
     </div>
   )
 }

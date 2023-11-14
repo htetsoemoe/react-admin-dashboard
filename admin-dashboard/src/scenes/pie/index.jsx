@@ -4,7 +4,7 @@ import { Typography } from '@mui/material'
 const index = () => {
   return (
     <div>
-      <Typography variant='h3' sx={{ml: "50px", mt: "50px"}}>Dashboard Component</Typography>
+      <Typography variant='h3' sx={{ ml: "50px", mt: "50px" }}>Pie Component</Typography>
     </div>
   )
 }
