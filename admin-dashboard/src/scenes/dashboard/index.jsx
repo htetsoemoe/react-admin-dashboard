@@ -1,11 +1,35 @@
 import React from 'react'
-import { Typography } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
+import { useTheme } from '@emotion/react'
+import { tokens } from '../../theme';
+import Header from '../../components/Header';
+import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 
 const index = () => {
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
+
   return (
-    <div>
-      <Typography variant='h3' sx={{ml: "50px", mt: "50px"}}>Dashboard Component</Typography>
-    </div>
+    <Box m="20px">
+      <Box display="flex" justifyContent="space-between" alignItems="center">
+        <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
+
+        <Box>
+          <Button
+            sx={{
+              backgroundColor: colors.blueAccent[700],
+              color: colors.grey[100],
+              fontSize: "14px",
+              fontWeight: "bold",
+              padding: "10px 20px"
+            }}
+          >
+            <DownloadOutlinedIcon sx={{ mr: "10px" }} />
+            Download Reports
+          </Button>
+        </Box>
+      </Box>
+    </Box>
   )
 }
 
