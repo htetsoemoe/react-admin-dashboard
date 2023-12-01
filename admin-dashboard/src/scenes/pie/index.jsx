@@ -1,11 +1,16 @@
 import React from 'react'
-import { Typography } from '@mui/material'
+import { Box } from '@mui/material'
+import Header from '../../components/Header'
+import PieChart from '../../components/PieChart'
 
 const index = () => {
   return (
-    <div>
-      <Typography variant='h3' sx={{ ml: "50px", mt: "50px" }}>Pie Component</Typography>
-    </div>
+    <Box m='20px'>
+      <Header title="Pie Chart" subtitle="Simple Pie Chart" />
+      <Box height="75vh">
+        <PieChart />
+      </Box>
+    </Box>
   )
 }
 

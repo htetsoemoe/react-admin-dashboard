@@ -1,11 +1,16 @@
 import React from 'react'
-import { Typography } from '@mui/material'
+import { Box } from '@mui/material'
+import Header from '../../components/Header'
+import LineChart from '../../components/LineChart'
 
 const index = () => {
   return (
-    <div>
-      <Typography variant='h3' sx={{ ml: "50px", mt: "50px" }}>Line Component</Typography>
-    </div>
+    <Box m="20px">
+      <Header title="Line Chart" subtitle="Simple Line Chart" />
+      <Box height="75vh">
+        <LineChart />
+      </Box>
+    </Box>
   )
 }
 

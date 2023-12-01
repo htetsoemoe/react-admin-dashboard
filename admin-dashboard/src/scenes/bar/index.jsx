@@ -1,11 +1,15 @@
-import { Typography } from '@mui/material'
-import React from 'react'
+import { Box } from "@mui/material"
+import Header from "../../components/Header"
+import BarChart from "../../components/BarChart"
 
 const index = () => {
   return (
-    <div>
-      <Typography variant='h3' sx={{ ml: "50px", mt: "50px" }}>Bar Component</Typography>
-    </div>
+    <Box m="20px">
+      <Header title="Bar Chart" subtitle="Simple Bar Chart" />
+      <Box height="75vh">
+        <BarChart />
+      </Box>
+    </Box>
   )
 }
 
