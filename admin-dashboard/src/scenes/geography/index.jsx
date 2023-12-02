@@ -1,11 +1,25 @@
 import React from 'react'
-import { Typography } from '@mui/material'
+import { Box, useTheme } from '@mui/material'
+import GeographyChart from '../../components/GeographyChart'
+import Header from '../../components/Header'
+import { tokens } from '../../theme'
 
 const index = () => {
+  const theme = useTheme()
+  const colors = tokens(theme.palette.mode)
+
   return (
-    <div>
-      <Typography variant='h3' sx={{ ml: "50px", mt: "50px" }}>Geography Component</Typography>
-    </div>
+    <Box m="20px">
+      <Header title="Geography" subtitle="Simple Geography Chart" />
+
+      <Box
+        height="75vh"
+        border={`1px solid ${colors.grey[100]}`}
+        borderRadius="4px"
+      >
+        <GeographyChart />
+      </Box>
+    </Box>
   )
 }
 
