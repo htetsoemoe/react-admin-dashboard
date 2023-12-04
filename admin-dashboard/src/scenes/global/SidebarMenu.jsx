@@ -50,6 +50,7 @@ const SidebarMenu = () => {
         rootStyles={{
           [`.${sidebarClasses.container}`]: {
             background: `${colors.primary[400]} !important`,
+            height: '1000px' // This height property is important for this project
           },
         }}
       >
